@@ -15,7 +15,7 @@ sudo systemctl enable docker
 ```
 Run Docker as non-root user
 ```
-sudo usermod -aG docker your-user
+sudo usermod -aG docker [your-user]
 ```
 Install rust (note -k ignores cert, usefull behind company FW with TLS inspection. The following line is not great security practice)
 ```
@@ -35,5 +35,5 @@ PS1="\[\033[38;5;7m\][\[$(tput sgr0)\]\[\033[38;5;33m\]\u\[$(tput sgr0)\]\[\033[
 
 Set hostname:
 ```
-hostnamectl set-hostname --static "hostname"
+hostnamectl set-hostname --static [hostname]
 ```
