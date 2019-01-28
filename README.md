@@ -30,10 +30,10 @@ sudo dnf install code -y
 ```
 .bashrc:
 ```
-## blue/green prompt
+# blue/green prompt
 PS1="\[\033[38;5;7m\][\[$(tput sgr0)\]\[\033[38;5;33m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;33m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;10m\]\W\[$(tput sgr0)\]\[\033[38;5;7m\]]\\$\[$(tput sgr0)\]"
 
-## pull :latest for all local docker containers
+# pull :latest for all local docker containers
 alias docker-all='docker images --format "{{.Repository}}:{{.Tag}}" | grep :latest | xargs -L1 docker pull'
 
 ```
