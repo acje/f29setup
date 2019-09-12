@@ -49,3 +49,6 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 http://neowaylabs.github.io/programming/unix-shell-for-data-scientists/
+
+bazel
+https://docs.bazel.build/versions/master/install-redhat.html
