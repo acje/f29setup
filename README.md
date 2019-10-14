@@ -48,6 +48,13 @@ Configure git:
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
+
+Install diesel cli for rust/postgres development:
+```
+sudo dnf install postgres-devel
+cargo install diesel_cli --no-default-features --features postgres
+```
+
 http://neowaylabs.github.io/programming/unix-shell-for-data-scientists/
 
 bazel
