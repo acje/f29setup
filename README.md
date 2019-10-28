@@ -55,6 +55,11 @@ sudo dnf install postgres-devel
 cargo install diesel_cli --no-default-features --features postgres
 ```
 
+make gcloud path work over time (replace ### with "current"), .bachrc:
+```
+PATH="$HOME/.local/bin:$HOME/bin:$PATH:/var/lib/snapd/snap/google-cloud-sdk/current/bin"
+```
+
 http://neowaylabs.github.io/programming/unix-shell-for-data-scientists/
 
 bazel
