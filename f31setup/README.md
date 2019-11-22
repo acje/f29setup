@@ -3,7 +3,7 @@
 Update and reboot:
 ```
 sudo dnf upgrade --refresh -y
-sudo shutdown -r now
+shutdown -r now
 ```
 
 Install docker:
@@ -17,9 +17,9 @@ Run Docker as non-root user
 ```
 sudo usermod -aG docker [your-user]
 ```
-Install rust (note -k ignores cert, usefull behind company FW with TLS inspection. The following line is not great security practice)
+todo: Install rust (note -k ignores cert, usefull behind company FW with TLS inspection. The following line is not great security practice)
 ```
-curl https://sh.rustup.rs -sSfk | sh
+//curl https://sh.rustup.rs -sSfk | sh
 ```
 Install vscode
 ```
