@@ -18,7 +18,8 @@ Run Docker as non-root user
 sudo usermod -aG docker [your-user]
 ```
 
-Add company MITM Cert 
+Add company MITM Cert
+
 https://unix.stackexchange.com/questions/366898/generate-hpkp-fingerprints-for-all-certificate-chain
 ```
 echo q | openssl s_client -servername example.com -connect example.com:443 -showcerts \
@@ -29,11 +30,11 @@ update-ca-trust enable
 rm cert[0-3].pem
 ```
 
-todo: Install rust (note -k ignores cert, usefull behind company FW with TLS inspection. The following line is not great security practice)
+Install rust
 ```
-//curl https://sh.rustup.rs -sSfk | sh
+curl https://sh.rustup.rs -sSf | sh
 ```
-Install vscode 
+Install vscode
 ```
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
