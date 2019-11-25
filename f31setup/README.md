@@ -17,6 +17,18 @@ Run Docker as non-root user
 ```
 sudo usermod -aG docker [your-user]
 ```
+
+Add company MITM Cert 
+https://unix.stackexchange.com/questions/366898/generate-hpkp-fingerprints-for-all-certificate-chain
+```
+echo q | openssl s_client -servername example.com -connect example.com:443 -showcerts \
+  | awk '/-----BEGIN/{f="cert"(n++)".pem"} f{print>f} /-----END/{f=""}'
+
+sudo cp cert[0-2].pem /etc/pki/ca-trust/source/anchors/
+update-ca-trust enable
+rm cert[0-3].pem
+```
+
 todo: Install rust (note -k ignores cert, usefull behind company FW with TLS inspection. The following line is not great security practice)
 ```
 //curl https://sh.rustup.rs -sSfk | sh
