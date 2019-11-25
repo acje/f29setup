@@ -21,13 +21,15 @@ todo: Install rust (note -k ignores cert, usefull behind company FW with TLS ins
 ```
 //curl https://sh.rustup.rs -sSfk | sh
 ```
-Install vscode
+Install vscode 
 ```
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 dnf check-update
 sudo dnf install code -y
 ```
+(configure File/Preferences/"Window: Title Bar Style" = custom)
+
 .bashrc:
 ```
 # blue/green prompt
