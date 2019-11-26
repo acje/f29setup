@@ -6,7 +6,8 @@ sudo dnf upgrade --refresh -y
 shutdown -r now
 ```
 
-Install docker:
+Install docker: (not working due to cgroups v2 upgrade)
+https://fedoraproject.org/wiki/Common_F31_bugs#Docker_package_no_longer_available_and_will_not_run_by_default_.28due_to_switch_to_cgroups_v2.29
 ```
 sudo dnf config-manager     --add-repo     https://download.docker.com/linux/fedora/docker-ce.repo
 sudo dnf install docker-ce -y
