@@ -64,3 +64,9 @@ http://neowaylabs.github.io/programming/unix-shell-for-data-scientists/
 
 bazel
 https://docs.bazel.build/versions/master/install-redhat.html
+
+IntelliJ community edition
+```
+sudo snap install intellij-idea-community --classic
+```
+
